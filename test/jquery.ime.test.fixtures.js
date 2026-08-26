@@ -21792,6 +21792,24 @@ var palochkaVariants = {
 		]
 	},
 	{
+		description: 'Tsishingini tilde test',
+		inputmethod: 'tsw-tilde',
+		tests: [
+			{ input: '~B', output: 'Ɓ', description: 'Tsishingini tilde ~B -> Ɓ' },
+			{ input: '~b', output: 'ɓ', description: 'Tsishingini tilde ~b -> ɓ' },
+			{ input: '~D', output: 'Ɗ', description: 'Tsishingini tilde ~D -> Ɗ' },
+			{ input: '~d', output: 'ɗ', description: 'Tsishingini tilde ~d -> ɗ' },
+			{ input: '~O', output: 'Ɔ', description: 'Tsishingini tilde ~O -> Ɔ' },
+			{ input: '~o', output: 'ɔ', description: 'Tsishingini tilde ~o -> ɔ' },
+			{ input: 'a~_', output: 'a\u0331', description: 'Tsishingini tilde a~_ -> a̱' },
+			{ input: 'e~~', output: 'e\u0303', description: 'Tsishingini tilde e~~ -> ẽ (combining tilde above)' },
+			{ input: "~'", output: '\u02BC', description: "Tsishingini tilde ~' -> \u02BC (glottal stop, modifier letter apostrophe)" },
+			{ input: 'a~/', output: 'a\u0301', description: 'Tsishingini tilde a~/ -> á (high tone, combining acute)' },
+			{ input: 'a~\\', output: 'a\u0300', description: 'Tsishingini tilde a~\\ -> à (low tone, combining grave)' },
+			{ input: 'a~^', output: 'a\u0302', description: 'Tsishingini tilde a~^ -> â (falling tone, combining circumflex)' }
+		]
+	},
+	{
 		description: 'Udmurt ALT test',
 		inputmethod: 'udm-alt',
 		tests: [
