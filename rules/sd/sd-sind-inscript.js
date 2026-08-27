@@ -1,13 +1,13 @@
 ( function ( $ ) {
 	'use strict';
 
-	var sdSindInScript2 = {
+	var sdSindInScript = {
 		id: 'sd-sind-inscript',
 		name: '𑋝𑋡𑋟𑋐𑋢 𑊲𑋑𑋪𑋝𑋪𑊺𑋪𑋙𑋡𑋒𑋪𑋆',
 		description: 'Enhanced InScript keyboard for Sindhi language in the Khudabadi script',
-		date: '2026-0',
-		URL: 'https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:UniversalLanguageSelector/Input_methods/sd-sind-inscript2',
-		author: 'Parag Nemade', 'Siddharth Talreja'
+		date: '2026-08-28',
+		URL: 'https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:UniversalLanguageSelector/Input_methods/sd-sind-inscript',
+		author: 'Parag Nemade, Siddharth Talreja',
 		license: 'GPLv3',
 		version: '1.0',
 		patterns: [
@@ -89,5 +89,5 @@
 		]
 	};
 
-	$.ime.register( sdSindInScript2 );
+	$.ime.register( sdSindInScript );
 }( jQuery ) );

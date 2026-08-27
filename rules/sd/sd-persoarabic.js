@@ -1,14 +1,14 @@
 ( function ( $ ) {
 	'use strict';
-	var sdArabKeyboard = {
-		id: 'sd-Arab',
-		name: 'Sindhi Perso Arabic (Standard)',
+	var sdpersoarabic = {
+		id: 'sd-persoarabic',
+		name: 'Perso Arabic',
 		description: 'This keyboard is based on the Standard keyboard layout by Abdul Majid Bhurgi (MB Sindhi)',
 		date: '2026-08-22',
-		URL: '',
+		URL: 'https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Extension:UniversalLanguageSelector/Input_methods/sd-persoarabic',
 		author: 'Siddharth Talreja',
-		license: '',
-		version: '',
+		license: 'GPLv3',
+		version: '1.0',
 		patterns: [
 			[ '~', '‘' ],
 			[ '`', '’' ],
@@ -26,11 +26,11 @@
 			[ '6', '6' ],
 			[ '&', '۽' ],
 			[ '7', '7' ],
-			[ '\\*', '\\*' ],
+			[ '\\*', '*' ],
 			[ '8', '8' ],
-			[ '\\(', '\\)' ],
+			[ '\\(', ')' ],
 			[ '9', '9' ],
-			[ '\\)', '\\(' ],
+			[ '\\)', '(' ],
 			[ '0', '0' ],
 			[ '_', '_' ],
 			[ '\\-', 'ڏ' ],
@@ -82,7 +82,7 @@
 			[ 'l', 'ل' ],
 			[ ':', '؛' ],
 			[ ';', 'ک' ],
-			[ '"', '\\ـ' ],
+			[ '"', 'ـ' ],
 			[ '\'', 'ڱ' ],
 			[ 'Z', 'ذ' ],
 			[ 'z', 'ز' ],
@@ -101,7 +101,7 @@
 			[ '\\<', '“' ],
 			[ ',', '،' ],
 			[ '\\>', '”' ],
-			[ '\\.', '\\.' ],
+			[ '\\.', '.' ],
 			[ '\\?', '؟' ],
 			[ '/', 'ئ' ]
 		]
