@@ -1,4 +1,4 @@
-﻿﻿// Variables for Cyrillic with palochka transliteration tests.
+﻿// Variables for Cyrillic with palochka transliteration tests.
 // All the characters are very similar in appearance,
 // so it's better to give them names to avoid confusion.
 // eslint-disable-next-line no-implicit-globals
@@ -3202,6 +3202,17 @@ var palochkaVariants = {
 		]
 	},
 	{
+		description: 'Izere tilde test',
+		inputmethod: 'izr-tilde',
+		tests: [
+			{ input: 'a~/e~/i~/o~/u~/', output: 'a\u0301e\u0301i\u0301o\u0301u\u0301', description: 'Izere tilde lowercase acute: á é í ó ú' },
+			{ input: 'A~/E~/I~/O~/U~/', output: 'A\u0301E\u0301I\u0301O\u0301U\u0301', description: 'Izere tilde uppercase acute: Á É Í Ó Ú' },
+			{ input: 'a~\\e~\\i~\\o~\\u~\\', output: 'a\u0300e\u0300i\u0300o\u0300u\u0300', description: 'Izere tilde lowercase grave: à è ì ò ù' },
+			{ input: 'A~\\E~\\I~\\O~\\U~\\', output: 'A\u0300E\u0300I\u0300O\u0300U\u0300', description: 'Izere tilde uppercase grave: À È Ì Ò Ù' },
+			{ input: 'e~_o~_E~_O~_', output: 'e\u0331o\u0331E\u0331O\u0331', description: 'Izere tilde macron below: e̱ o̱ E̱ O̱' }
+		]
+	},
+	{
 		description: 'Hyam tilde test',
 		inputmethod: 'jab-tilde',
 		tests: [
@@ -4251,6 +4262,20 @@ var palochkaVariants = {
 			{ input: 'L', output: 'ಳ್', description: 'L for ಳ್ in Kannada transliteration' },
 			{ input: 'Q', output: 'ೞ್', description: 'Q for ೞ್ in Kannada transliteration' },
 			{ input: 'd~ha', output: 'ದ್ಹ', description: 'd~ha for ದ್ಹ in Kannada transliteration' }
+		]
+	},
+	{
+		description: 'Khiamniungan Naga tilde test',
+		inputmethod: 'kix-tilde',
+		tests: [
+			{ input: 'a~\\a~-a~^a~/e~\\e~-e~^e~/i~\\i~-i~^i~/', output: 'àāâáèēêéìīîí', description: 'a/e/i × 4 tones' },
+			{ input: 'o~\\o~-o~^o~/u~\\u~-u~^u~/', output: 'òōôóùūûú', description: 'o/u × 4 tones' },
+			{ input: '~u~\\~u~-~u~^~u~/', output: 'ǜǖü̂ǘ', description: 'ü × 4 tones' },
+			{ input: '~U~\\~U~-~U~^~U~/', output: 'ǛǕÜ̂Ǘ', description: 'Ü × 4 tones' },
+			{ input: '~u~- a~/ e~^ i~\\ o~-', output: 'ǖ á ê ì ō', description: 'mixed tones with spaces' },
+			{ input: '~~ ~ ~x ~', output: '~~ ~ ~x ~', description: 'double tilde, tilde space, tilde+x' },
+			{ input: 'A~\\E~-I~^O~/U~\\', output: 'ÀĒÎÓÙ', description: 'capital tone-marked vowels' },
+			{ input: 'h~u~-he~^i', output: 'hǖhêi', description: 'real word h~u~-he~^i' }
 		]
 	},
 	{
@@ -21764,6 +21789,24 @@ var palochkaVariants = {
 			{ input: 'Mala~wi', output: 'Malaŵi', description: 'ChiTumbuka tilde test Malaŵi' },
 			{ input: '~Wanthu', output: 'Ŵanthu', description: 'ChiTumbuka tilde test Ŵanthu' },
 			{ input: 'kulimira~^so', output: 'kulimirâso', description: 'ChiTumbuka tilde test kulimirâso' }
+		]
+	},
+	{
+		description: 'Tsishingini tilde test',
+		inputmethod: 'tsw-tilde',
+		tests: [
+			{ input: '~B', output: 'Ɓ', description: 'Tsishingini tilde ~B -> Ɓ' },
+			{ input: '~b', output: 'ɓ', description: 'Tsishingini tilde ~b -> ɓ' },
+			{ input: '~D', output: 'Ɗ', description: 'Tsishingini tilde ~D -> Ɗ' },
+			{ input: '~d', output: 'ɗ', description: 'Tsishingini tilde ~d -> ɗ' },
+			{ input: '~O', output: 'Ɔ', description: 'Tsishingini tilde ~O -> Ɔ' },
+			{ input: '~o', output: 'ɔ', description: 'Tsishingini tilde ~o -> ɔ' },
+			{ input: 'a~_', output: 'a\u0331', description: 'Tsishingini tilde a~_ -> a̱' },
+			{ input: 'e~~', output: 'e\u0303', description: 'Tsishingini tilde e~~ -> ẽ (combining tilde above)' },
+			{ input: "~'", output: '\u02BC', description: "Tsishingini tilde ~' -> \u02BC (glottal stop, modifier letter apostrophe)" },
+			{ input: 'a~/', output: 'a\u0301', description: 'Tsishingini tilde a~/ -> á (high tone, combining acute)' },
+			{ input: 'a~\\', output: 'a\u0300', description: 'Tsishingini tilde a~\\ -> à (low tone, combining grave)' },
+			{ input: 'a~^', output: 'a\u0302', description: 'Tsishingini tilde a~^ -> â (falling tone, combining circumflex)' }
 		]
 	},
 	{

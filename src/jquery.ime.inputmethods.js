@@ -492,6 +492,10 @@
 			name: 'Esan Awain tilde',
 			source: 'rules/ish/ish-tilde.js'
 		},
+		'izr-tilde': {
+			name: 'Izere tilde',
+			source: 'rules/izr/izr-tilde.js'
+		},
 		'jab-tilde': {
 			name: 'Hyam tilde',
 			source: 'rules/jab/jab-tilde.js'
@@ -539,6 +543,10 @@
 		'ki-tilde': {
 			name: 'Gĩkũyũ',
 			source: 'rules/ki/ki-tilde.js'
+		},
+		'kix-tilde': {
+			name: 'Khiamniungan tilde',
+			source: 'rules/kix/kix-tilde.js'
 		},
 		'kk-arabic': {
 			name: 'Kazakh Arabic transliteration',
@@ -1050,6 +1058,10 @@
 			name: 'Setswana tilde',
 			source: 'rules/tn/tn-tilde.js'
 		},
+		'tsw-tilde': {
+			name: 'Tsishingini tilde',
+			source: 'rules/tsw/tsw-tilde.js'
+		},
 		'tum-tilde': {
 			name: 'ChiTumbuka tilde',
 			source: 'rules/tum/tum-tilde.js'
@@ -1482,6 +1494,10 @@
 			autonym: 'awain',
 			inputmethods: [ 'ish-tilde' ]
 		},
+		izr: {
+			autonym: 'Izere',
+			inputmethods: [ 'izr-tilde' ]
+		},
 		jab: {
 			autonym: 'Hyam',
 			inputmethods: [ 'jab-tilde' ]
@@ -1529,6 +1545,10 @@
 		ki: {
 			autonym: 'Gĩkũyũ',
 			inputmethods: [ 'ki-tilde' ]
+		},
+		kix: {
+			autonym: 'Khiamniungan',
+			inputmethods: [ 'kix-tilde' ]
 		},
 		kk: {
 			autonym: 'Қазақша',
@@ -1885,6 +1905,10 @@
 		tn: {
 			autonym: 'Setswana',
 			inputmethods: [ 'tn-tilde' ]
+		},
+		tsw: {
+			autonym: 'Tsishingini',
+			inputmethods: [ 'tsw-tilde' ]
 		},
 		tum: {
 			autonym: 'ChiTumbuka',
